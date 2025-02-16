@@ -1,8 +1,5 @@
 # assignment_1
 
-# running demo of the app:
-https://khiibaedu-my.sharepoint.com/:v:/g/personal/a_iqbal_24529_khi_iba_edu_pk/Eb5P7TpClGVIgrbiSF_2Id0BaSjXvokkVWmtk35_6lHqDQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=d09mFd
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
