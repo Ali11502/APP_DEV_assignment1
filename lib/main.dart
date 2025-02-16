@@ -139,29 +139,47 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
   }
 
   Widget _buildScrollablePosts() {
-    final List<String> events = [
-      "app dev assignment\n16 Feb 2025, 11:55 PM\nIba karachi\nAli Iqbal",
-      "app dev assignment\n16 Feb 2025, 11:55 PM\nIba karachi\nAli Iqbal",
-      "app dev assignment\n16 Feb 2025, 11:55 PM\nIba karachi\nAli Iqbal",
-      "app dev assignment\n16 Feb 2025, 11:55 PM\nIba karachi\nAli Iqbal",
-      "app dev assignment\n16 Feb 2025, 11:55 PM\nIba karachi\nAli Iqbal",
-    ];
+  final Map<String, String> firstPost = {
+    "title": "App Dev Assignment",
+    "date": "16 Feb 2025, 11:55 PM",
+    "location": "IBA Karachi",
+  };
 
-    return ListView.builder(
-      padding: const EdgeInsets.all(16),
-      itemCount: events.length,
-      itemBuilder: (context, index) {
-        return Card(
-          elevation: 2,
-          margin: const EdgeInsets.only(bottom: 12),
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(events[index]),
+  final List<Map<String, String>> posts = List.generate(5, (index) => firstPost);
+
+  return ListView.builder(
+    padding: const EdgeInsets.all(16),
+    itemCount: posts.length,
+    itemBuilder: (context, index) {
+      return Card(
+        elevation: 2,
+        margin: const EdgeInsets.only(bottom: 12),
+        child: ListTile(
+          contentPadding: const EdgeInsets.all(12),
+          leading: ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: Image.asset(
+              "assets/profile.jpg",
+              width: 60,
+              height: 60,
+              fit: BoxFit.cover,
+            ),
           ),
-        );
-      },
-    );
-  }
+          title: Text(
+            posts[index]["title"]!,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
+          subtitle: Text(
+            "${posts[index]["date"]!}\n${posts[index]["location"]!}",
+            style: const TextStyle(color: Colors.black54),
+          ),
+        ),
+      );
+    },
+  );
+}
+
+
 
  
 Widget _buildScrollableComments() {
