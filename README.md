@@ -1,8 +1,6 @@
 # assignment_1
 
 A new Flutter project.
-# demo of the app
-https://khiibaedu-my.sharepoint.com/:v:/g/personal/a_iqbal_24529_khi_iba_edu_pk/EXnxzFvldNJDo5UXY46sl7MBbkLFor1TrFVErOZ0vrYK4A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=azRu5O
 
 ## Getting Started
 
