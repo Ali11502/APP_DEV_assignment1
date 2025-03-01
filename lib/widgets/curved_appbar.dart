@@ -25,9 +25,11 @@ class WavyAppBarClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
-    path.lineTo(0, size.height - 50);
-    path.quadraticBezierTo(size.width * 0.2, size.height - 120, size.width * 0.60, size.height - 60);
-    path.quadraticBezierTo(size.width * 0.75, size.height - 20, size.width, size.height - 20);
+    path.lineTo(0, size.height);
+    path.quadraticBezierTo(size.width * 0.2, size.height - 120,
+        size.width * 0.60, size.height - 50);
+    path.quadraticBezierTo(
+        size.width * 0.75, size.height - 20, size.width, size.height - 20);
     path.lineTo(size.width, 0);
     path.close();
     return path;
