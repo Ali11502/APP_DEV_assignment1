@@ -29,7 +29,7 @@ class WavyAppBarClipper extends CustomClipper<Path> {
     path.quadraticBezierTo(size.width * 0.2, size.height - 120,
         size.width * 0.60, size.height - 50);
     path.quadraticBezierTo(
-        size.width * 0.75, size.height - 20, size.width, size.height - 20);
+        size.width * 0.75, size.height - 20, size.width, size.height - 15);
     path.lineTo(size.width, 0);
     path.close();
     return path;
